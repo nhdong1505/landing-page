@@ -1,0 +1,12 @@
+.button {
+  background-color: var(--theme-btn-dark-color);
+  color: var(--theme-color-white);
+  padding: var(--space-xx-small) var(--space-small) var(--space-xx-small) var(--space-small);
+  border-radius:var(--space-x-small) ;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 1.1em;
+  :hover{
+      transition: .4s;
+  }
+}

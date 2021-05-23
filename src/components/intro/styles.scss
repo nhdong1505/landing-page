@@ -1,0 +1,23 @@
+.intro {
+  background-color: var(--theme-btn-primary-color);
+  padding-top: var(--space-10rem);
+  padding-bottom: var(--space-6rem);
+  &-text2{
+    color: var(--theme-btn-dark-text);
+    font-weight: 800;
+    line-height: 1.1em;
+  }
+  &-img {
+    animation-name: moveInBottom;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    width: 34%;
+    height: auto;
+    :hover{
+        transform: scale(1.1) ; 
+        animation-duration: .4;
+        background-color: red;
+    }
+  }
+ 
+}

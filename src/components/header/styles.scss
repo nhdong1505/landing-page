@@ -1,0 +1,32 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--theme-btn-primary-color);
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  padding: var(--space-s-medium);
+  .title {
+    color: var(--theme-color-white);
+    font-family: "Nunito", Sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    text-shadow: 1px 2px 3px var(--theme-color-black);
+  }
+  .menu {
+    font-size: var(--space-s-medium);
+    font-weight: 900;
+    &--icon {
+      margin-right: var(--space-x-small);
+    }
+    &--item {
+      margin-right: var(--space-large);
+      cursor: pointer;
+      :hover {
+        transform: scale(1.1);
+        transition: 0.4s;
+      }
+    }
+  }
+}
