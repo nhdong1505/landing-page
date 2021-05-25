@@ -8,30 +8,30 @@ function Contact(props) {
         <Container fluid className="contact">
             <div className="d-flex flex-column align-items-center">
                 <h2 class="contact-heading-title">Join our Community</h2>
-                <p class="contact-box-text">Join our community to get the latest news and stay up to date. Also, we have the best memes!</p>
+                <p className="contact-box-text">Join our community to get the latest news and stay up to date. Also, we have the best memes!</p>
             </div>
-            <div class="social-network">
-                <div class="social-box">
+            <div className="social-network">
+                <div className="social-box">
                     <Telegram className="token-icon" />
                     <span>Telegram</span>
                 </div>
-                <div class="social-box">
+                <div className="social-box">
                     <Twitter className="token-icon" />
                     <span>Twitter</span>
                 </div>
-                <div class="social-box">
+                <div className="social-box">
                     <Reddit className="token-icon" />
                     <span>Reddit</span>
                 </div>
-                <div class="social-box">
+                <div className="social-box">
                     <Discord className="token-icon" />
                     <span>Discord</span>
                 </div>
-                <div class="social-box">
+                <div className="social-box">
                     <Instagram className="token-icon" />
                     <span>Instagram</span>
                 </div>
-                <div class="social-box">
+                <div className="social-box">
                     <Facebook className="token-icon" />
                     <span>Facebook</span>
                 </div>
