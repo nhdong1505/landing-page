@@ -22,25 +22,25 @@ function Header(props) {
                         <Col className="col-sm-auto menu--item">
                             <Row className="align-items-center" >
                                 <InfoCircleFill className="menu--icon" />
-                                <span>About</span>
+                                <span><a href="#about-section">About</a></span>
                             </Row>
                         </Col>
                         <Col className="col-sm-auto menu--item">
                             <Row className="align-items-center">
                                 <App className="menu--icon" />
-                                <span>TokenNomic</span>
+                                <span><a href="#token-section">TokenNomic</a></span>
                             </Row>
                         </Col>
                         <Col className="col-sm-auto menu--item">
                             <Row className="align-items-center">
                                 <SignpostSplit className="menu--icon" />
-                                <span>RoadMap</span>
+                                <span><a href="#roadmap-section">RoadMap</a></span>
                             </Row>
                         </Col>
                         <Col className="col-sm-auto menu--item">
                             <Row className="align-items-center">
                                 <PersonLinesFill className="menu--icon" />
-                                <span>Contact</span>
+                                <span><a href="#contact-section">Contact</a></span>
                             </Row>
                         </Col>
                     </Row>

@@ -5,7 +5,7 @@ import { Reddit, Instagram, Telegram, Twitter, Discord, Facebook } from 'react-b
 
 function Contact(props) {
     return (
-        <Container fluid className="contact">
+        <Container fluid className="contact" id="contact-section">
             <div className="d-flex flex-column align-items-center">
                 <h2 class="contact-heading-title">Join our Community</h2>
                 <p className="contact-box-text">Join our community to get the latest news and stay up to date. Also, we have the best memes!</p>

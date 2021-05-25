@@ -5,8 +5,8 @@ import ButtonIcon from '../../components/buttonIcon'
 
 function Roadmap(props) {
     return (
-        <Container className="roadmap">
-            <div className="d-flex flex-column align-items-center">
+        <Container className="roadmap" id= "roadmap-section" >
+            <div className="d-flex flex-column align-items-center" >
                 <h2 className="roadmap-heading-title">Roadmap</h2>
             </div>
             <ul className="timeline">

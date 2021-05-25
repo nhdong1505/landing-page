@@ -15,6 +15,7 @@
     font-weight: 900;
     text-shadow: 1px 2px 3px var(--theme-color-black);
   }
+
   .menu {
     font-size: var(--space-s-medium);
     font-weight: 900;
@@ -27,6 +28,12 @@
       :hover {
         transform: scale(1.1);
         transition: 0.4s;
+      }
+    }
+    span {
+      a {
+        color: var(--theme-color-black);
+        text-decoration: none !important;
       }
     }
   }

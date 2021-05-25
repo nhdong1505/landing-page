@@ -5,7 +5,7 @@ import { CartFill, Coin, WalletFill } from 'react-bootstrap-icons'
 
 function Tokenomic(props) {
     return (
-        <Container fluid className="token">
+        <Container fluid className="token" id="token-section">
             <div className="d-flex flex-column align-items-center">
                 <h2 className="token-heading-title">Tokenomics</h2>
             </div>

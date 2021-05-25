@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import './styles.scss'
 import { Container, Form, Col, Row, Alert } from 'react-bootstrap'
 import ButtonIcon from '../buttonIcon'
-import { db } from '../../firebase'
+import { db, fireBaseApp } from '../../firebase'
 function Contact(props) {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -12,16 +12,12 @@ function Contact(props) {
     const [typeAlert, setTypeAlert] = useState('success')
     const [notiMessage, setNotiMessage] = useState('sent contact success')
     useEffect(() => {
-        // db.collection('contacts').add({
-        //     name: "dong",
-        //     email: "nhdong",
-        //     message: "messsss"
-        // }).then(() => {
-        //     console.log("add done")
-        // }).catch((err) => {
-        //     console.log("add error", err)
-        // })
-        console.log("test")
+        const todoRef = fireBaseApp.database().ref('contacts');
+        todoRef.on('value', (snapshot) => {
+            const contacts = snapshot.val();
+            const listContact = Object.values(contacts);
+            console.log("getallvalue", listContact)
+        })
     }, [])
 
     const onChange = (e, type) => {
@@ -48,11 +44,15 @@ function Contact(props) {
             setNotiMessage('please fill all input!')
             setShowAlert(true);
         } else {
-            db.collection('contacts').add({
+            const todoRef = fireBaseApp.database().ref('contacts');
+            const newContact = {
                 name: name,
                 email: email,
                 message: message
-            }).then(() => {
+            }
+
+
+            todoRef.push(newContact).then(() => {
                 setTypeAlert('success');
                 setNotiMessage('sent contact success!')
                 setShowAlert(true);
@@ -61,10 +61,12 @@ function Contact(props) {
                 setTypeAlert('danger');
                 setNotiMessage(err)
                 setShowAlert(true);
+            }).finally(() => {
+                setName('');
+                setEmail('');
+                setMessage('');
             })
-            setName('');
-            setEmail('');
-            setMessage('');
+
         }
     }
     return (
