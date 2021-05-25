@@ -48,14 +48,24 @@ function Contact(props) {
             setNotiMessage('please fill all input!')
             setShowAlert(true);
         } else {
-            setTypeAlert('success');
-            setNotiMessage('sent contact success!')
-            setShowAlert(true);
+            db.collection('contacts').add({
+                name: name,
+                email: email,
+                message: message
+            }).then(() => {
+                setTypeAlert('success');
+                setNotiMessage('sent contact success!')
+                setShowAlert(true);
+            }).catch((err) => {
+                console.log("add error", err)
+                setTypeAlert('danger');
+                setNotiMessage(err)
+                setShowAlert(true);
+            })
             setName('');
             setEmail('');
             setMessage('');
         }
-        console.log("form:", name, email, message)
     }
     return (
         <Container fluid className="contact-form">
