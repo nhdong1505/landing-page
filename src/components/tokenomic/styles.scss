@@ -1,0 +1,48 @@
+.token{
+    background-color: var(--theme-btn-primary-color);
+    padding-top: var(--space-4rem);
+    padding-bottom: var(--space-2rem);
+}
+.token-heading-title{
+    color: #312233;
+    font-family: "Nunito", Sans-serif;
+    font-size: 81px;
+    font-weight: 800;
+    text-align: center;
+}
+.token-box{
+    display: flex;
+    justify-content: center;
+    padding-top: var(--space-14rem);
+    padding-bottom: var(--space-4rem);
+    padding-left: var(--space-12rem);
+    padding-right: var(--space-12rem);
+}
+.token-box-item{
+    display: table;
+    justify-content: center;
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
+}
+.token-box-icon-title{
+    display: block;
+    color: #312233;
+    font-family: "Nunito", Sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+.token-box-text{
+    color: #312233;
+    font-family: "Nunito", Sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+}
+.token-icon{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}

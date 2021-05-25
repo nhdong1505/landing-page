@@ -1,0 +1,41 @@
+.contact{
+    background-color: var(--theme-btn-primary-color);
+    padding-top: var(--space-4rem);
+    .contact-form{
+        background-color: #ffffff;
+        padding-top: var(--space-8rem);
+        padding-bottom: var(--space-14rem);
+        display: flex;
+        justify-content: center;
+    }
+}
+.contact-heading-title{
+    color: #312233;
+    font-family: "Nunito", Sans-serif;
+    font-size: 81px;
+    font-weight: 800;
+    text-align: center;
+}
+.contact-box-text{
+    color: #312233;
+    font-family: "Nunito", Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+.social-network{
+    display: flex;
+    justify-content: center;
+    padding-top: var(--space-8rem);
+    padding-bottom: var(--space-4rem);
+    padding-left: var(--space-22rem);
+    padding-right: var(--space-22rem);
+}
+.social-box{
+    display: table;
+    justify-content: center;
+    float: left;
+    width: 25%;
+    height: 180px;
+    text-align: center;
+}

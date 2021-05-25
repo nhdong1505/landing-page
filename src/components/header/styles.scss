@@ -2,6 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
   background-color: var(--theme-btn-primary-color);
   animation-name: moveInLeft;
   animation-duration: 1s;
